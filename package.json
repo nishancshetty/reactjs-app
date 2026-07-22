@@ -1,11 +1,8 @@
 {
   "name": "nishan-portfolio",
-  "homepage": " https://nishancshetty.github.io/reactjs-app/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
