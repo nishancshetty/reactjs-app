@@ -1,0 +1,106 @@
+.contact__content {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+}
+
+/* Form */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+
+.contact__label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+
+.contact__label:first-child {
+  margin-top: 0;
+}
+
+.contact__input {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color var(--transition-fast);
+}
+
+.contact__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.contact__input:hover {
+  border-color: var(--color-accent-light);
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact__submit {
+  margin-top: 26px;
+  align-self: flex-start;
+}
+
+.contact__success {
+  margin-top: 14px;
+  color: var(--color-accent-light);
+  font-size: 0.9rem;
+}
+
+/* Info panel */
+.contact__info-title {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.contact__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact__info-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact__info-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.contact__info-list a {
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.contact__info-list a:hover {
+  color: var(--color-accent-light);
+}
+
+/* ==========================================================================
+   Responsive breakpoints
+   ========================================================================== */
+@media (max-width: 800px) {
+  .contact__content {
+    grid-template-columns: 1fr;
+  }
+}

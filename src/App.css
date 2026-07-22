@@ -1,0 +1,5 @@
+/* Alternate background shading between sections for visual rhythm */
+#about,
+#projects {
+  background-color: var(--color-bg-alt);
+}
